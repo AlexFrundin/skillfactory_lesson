@@ -1,0 +1,11 @@
+burgerclub	10	185
+city-magazine	5	81
+direct	5	88
+facebook	5	91
+food-delivery	10	173
+foody	3	66
+google	77	1319
+newsletter	5	98
+promo	68	1181
+vk	2	29
+yandex	104	1818
