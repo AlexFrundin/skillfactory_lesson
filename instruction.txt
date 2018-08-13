@@ -21,7 +21,15 @@ data = requests.get(url, params = params)
     git rm --cached --ignore-unmatch application.yml - удаляем файл только из репозитория, и физически файл сохранится на диске
     git commit -am "Message"
     git push origin {branch name}
-
+    Файл висит в локале, но в папке не виден
+    Еще способ(не проверял)
+    git rm -r --cached .
+    git add .
+    git commit -m "fixing .gitignore"
+отмена действия
+git reflog
+git reset --hard 743acea
+git push --force
 
 Список прокси
 # https://hidemyna.me/ru/proxy-list/?type=s#list
