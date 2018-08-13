@@ -4,3 +4,4 @@
 *.sqlite3
 *.docx
 *.7z
+config.yaml
