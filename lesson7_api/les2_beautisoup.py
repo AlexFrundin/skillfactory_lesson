@@ -1,10 +1,11 @@
 from bs4 import BeautifulSoup
 from pprint import pprint
 import requests
+proxies = {'https':'144.76.62.29:3128',
+           'https':'109.197.27.77:3128'}
+r = requests.get(url, proxies=proxies)
+
 url = 'https://lenta.ru/articles/2018/02/12/olympics2/'
-
-r = requests.get(url)
-
 soup = BeautifulSoup(r.text, 'html.parser')
 topic_title = soup.find(class_='b-topic__title').text
 topic_info = soup.find('div', class_='b-topic__info')
