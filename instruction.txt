@@ -14,5 +14,14 @@ params = {
 data = requests.get(url, params = params)
 где token - ваш сервисный ключ
 
+
+
+как удалить файл из git но оставить в локале
+    Добавьте файл в .gitignore
+    git rm --cached --ignore-unmatch application.yml - удаляем файл только из репозитория, и физически файл сохранится на диске
+    git commit -am "Message"
+    git push origin {branch name}
+
+
 Список прокси
 # https://hidemyna.me/ru/proxy-list/?type=s#list
