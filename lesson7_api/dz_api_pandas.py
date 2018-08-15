@@ -3,6 +3,8 @@ import requests
 from pprint import pprint
 import json
 import pandas as pandas
+
+
 with open('../config.yaml', 'r') as f:
     token = _(f)['access_token']
 
