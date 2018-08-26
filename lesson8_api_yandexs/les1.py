@@ -32,11 +32,11 @@ def my_request(get='', params_={}, url='https://api-metrika.yandex.ru/stat/v1/da
     return r
 
 data = my_request().json()
-pprint(data)
-# for line in data['data']:
-#     visit_date = line['dimensions'][0]['name']
-#     visits = line['metrics'][0]
-#     users = line['metrics'][1]
-#     pageviews = line['metrics'][2]
-#     percent_new_visitors = line['metrics'][3]
-#     print(visit_date, visits, users, pageviews, percent_new_visitors)
+
+for line in data['data']:
+    visit_date = line['dimensions'][0]['name']
+    visits = line['metrics'][0]
+    users = line['metrics'][1]
+    pageviews = line['metrics'][2]
+    percent_new_visitors = line['metrics'][3]
+    print(visit_date, visits, users, pageviews, percent_new_visitors)
