@@ -15,7 +15,7 @@ idna==2.7
 jdcal==1.4
 kiwisolver==1.0.1
 matplotlib==2.2.0
-nltk==3.3
+nltk==3.4.5
 numpy==1.14.2
 openpyxl==2.5.4
 pandas==0.22.0
